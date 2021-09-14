@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+        display: flex;
+        background-color: #202124;
+    }
+
+    div {
+        height: 200px;
+        width: 400px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -100px;
+        margin-left: -200px;
+    }
+
+    .button {
+        display: flex;
+        border-radius: 4px;
+        border: 1px solid #303134;
+        color: #e8eaed;
+        line-height: 27px;
+        height: 36px;
+        justify-content: center;
+        background-color: #303134;
+        align-items: center;
+        flex-direction: row;
+        padding: 0 16px;
+        font-family: arial;
+        font-size: 14px;
+        margin: 11px 4px;
+        cursor: pointer;
+        align-items: normal;
+    }
+
+    .button:hover {
+        box-shadow: 0 1px 3px rgba(23, 23, 23, 0.24);
+        background-color: #303134;
+        border: 1px solid #5f6368;
+        color: #e8eaed;
+
+    }
+
+    .searchbar {
+        display: flex;
+        background-color: transparent;
+        color: #e8eaed;
+        border: 1px solid #303134;
+    }
+
+    .searchbar:hover {
+        background-color: #303134;
+    }
+</style>
+
+<head>
+    <title>Google Homepage made only in HTML/CSS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div>
+        <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/284f0cdc998be7e4751e29e8458323ad5d320303/foundations/the_front_end/project_html_css/imgs/00.png"
+            alt="Foogle Logo">
+        <span class="material-icons-outlined">
+            search
+        </span>
+        <input class="searchbar" type="text" name="searchbar" placeholder="Search">
+        <button class="button" name="button">Search</button>
+        <button class="button" name="button">Lucky</button>
+    </div>
+</body>
+
+</html>
